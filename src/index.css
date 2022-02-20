@@ -1,3 +1,72 @@
-h1 {
-    color: red;
+/* general */
+html {
+    width:100%;
+    height: 100%;
 }
+
+body {
+    width:100%;
+    height: 100%;
+    margin : 0px;
+}
+
+/* watch */
+#watchScreen {
+    background-color: rgb(41, 41, 41);
+    width : 500px;
+    height : 200px;
+    border : 10px solid black;
+    border-radius : 10px;
+}
+
+ #watchTime {
+    color : white;
+    text-align: center;
+    font-size: 5em;
+    width: 100%;
+    height:0px;
+    position : relative;
+    top : 25%;
+ }
+
+ /* button bar */
+ #btnBar {
+    width : 15%;
+    height : 100%;
+    position : relative;
+    left : 85%;
+    border-left: 1px solid white;
+ }
+
+ #btnBar > button {
+    background-color: transparent;
+    border : none;
+    color : white;
+    width : 100%;
+    display : block;
+    padding-top : 33.33%;
+    padding-bottom : 33.33%;
+ }
+
+ /* increment mode */
+ #modeDisplay {
+    position: relative;
+    height: 0px;
+    top: 5px;
+    left: 20px;
+    color: white;
+    font-size: 25px;
+ }
+
+ /* Light style */
+ .lightOn > #watchTime {
+    color: rgb(255, 254, 188);
+ }
+ 
+ .lightOn > #modeDisplay {
+    color: rgb(255, 254, 188);
+ }
+ 
+ .lightOn > #btnBar > button {
+    color: rgb(255, 254, 188);
+ }
